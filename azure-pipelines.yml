@@ -22,7 +22,6 @@ steps:
     awsCredentials: 'aws-s3-service-connection'
     regionName: 'us-east-2'
     bucketName: 'podium5.tech'
-    sourceFolder: '/ Hello-World'
     globExpressions: '**'
     targetFolder: 'public'
     filesAcl: 'public-read-write'
