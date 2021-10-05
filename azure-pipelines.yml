@@ -19,10 +19,10 @@ steps:
   displayName: 'Run a multi-line script'
 - task: S3Upload@1
   inputs:
-    awsCredentials: 'aws-dev01'
+    awsCredentials: 'aws-s3-service-connection'
     regionName: 'us-east-2'
     bucketName: 'podium5.tech'
     sourceFolder: '/ Hello-World'
     globExpressions: '**'
-    targetFolder: 'podium5.tech'
-    filesAcl: 'public-read'
+    targetFolder: 'podium5.tech/'
+    filesAcl: 'public-read-write'
