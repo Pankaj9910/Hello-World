@@ -24,5 +24,6 @@ steps:
     bucketName: 'podium5.tech'
     sourceFolder: '/ Hello-World'
     globExpressions: '**'
-    targetFolder: 'podium5.tech/'
+    targetFolder: 'public'
     filesAcl: 'public-read-write'
+    createBucket: true
